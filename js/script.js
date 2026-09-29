@@ -13,6 +13,9 @@ function adicionarExercicio() {
     item.textContent = campo.value;
 
     lista.appendChild(item);
+    
+    document.getElementById("totalExercicios").textContent = lista.children.length;
+	
 
     campo.value = "";
 }
@@ -30,6 +33,8 @@ function registrarTreino() {
     item.textContent = campo.value;
 
     lista.appendChild(item);
+
+    document.getElementById("totalTreinos").textContent = lista.children.length;
 
     campo.value = "";
 }
