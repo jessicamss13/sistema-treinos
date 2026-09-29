@@ -16,3 +16,20 @@ function adicionarExercicio() {
 
     campo.value = "";
 }
+
+function registrarTreino() {
+    const campo = document.getElementById("nomeTreino");
+    const lista = document.getElementById("listaTreinos");
+
+    if (campo.value.trim() === "") {
+        alert("Digite o nome do treino.");
+        return;
+    }
+
+    const item = document.createElement("li");
+    item.textContent = campo.value;
+
+    lista.appendChild(item);
+
+    campo.value = "";
+}
